@@ -1,0 +1,608 @@
+/*------------------------ */
+/*basic */
+/*------------------------ */
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+
+html{
+    background:#ffffff;
+    color:#4a4a4a;
+    font-family: 'lato','arial',sans-serif; 
+    font-family: inherit;
+    font-size: 20px;
+    font-weight:300; 
+    text-rendering: optimizeLegibility;
+    }
+/*------------------------ */
+/*common */
+/*------------------------ */
+.row{
+    margin:0 auto;
+    max-width:1140px; 
+
+}
+
+.section{
+    
+padding:80px 0; 
+}
+
+.box {
+    padding:1%;
+    
+    
+}
+
+
+
+/*------------------------ */
+/*header */
+/*------------------------ */
+header{
+    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.57)),to(rgba(0, 0, 0, 0.53))),url(https://ktchnmag.com/wp-content/uploads/2017/11/Grundig_KTCHNMAG_respect-food-technologies_Grundig-7.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.57),rgba(0, 0, 0, 0.53)),url(https://ktchnmag.com/wp-content/uploads/2017/11/Grundig_KTCHNMAG_respect-food-technologies_Grundig-7.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    background-position:center;
+    height:100vh;
+    
+}
+.mainheader{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left:50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    
+    
+}
+
+
+h1,h2,h3{
+    font-weight: 300;
+    text-transform: uppercase;
+   
+   
+    
+}
+h1{
+    margin-top:0;
+    margin-bottom: 20px;
+    color: azure;
+    font-size: 240%;  
+     word-spacing: 4px;
+     letter-spacing: 1px;
+}
+h2{
+    font-size:180%;
+    word-spacing:2px;
+    text-align: center;
+    margin-bottom:30px; 
+     letter-spacing: 1px;
+    margin-top:30px; 
+    
+}
+h2:after{
+    display: block;
+    height:2px;
+    background-color:#3b9ded;
+    content: " ";
+    width: 250px;
+    margin:0 auto;
+    margin-bottom: 50px;
+    margin-top:20px;
+}
+h3
+{
+  margin-bottom: 15px;
+    font-size: 140%;
+}
+
+.p1{
+    margin-left:15%;
+    width:70%;
+    line-height:125%; 
+    margin-bottom:30px; 
+    
+}
+.box p{
+    font-size:90%;
+    line-height: 145%;
+    margin-bottom:50px; 
+}
+.big{
+    font-size:400%;
+    color: #89c4f4;
+    display: block;
+    margin-bottom: 10px;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    
+}
+
+.small{
+    -ms-flex-line-pack:center;
+    align-content:center;
+    display:inline-block;
+    width:30px; 
+    color: #89c4f4;
+    font-size:120%; 
+    margin-right:5px;
+    
+    line-height:120%;
+    vertical-align:middle;
+    margin-top:-5px; 
+}
+/*------------------------ */
+/*link */
+/*------------------------ */
+a:link,
+a:visited{
+    color:#a7a4ed ;
+    text-decoration: none;
+    border-bottom:1px solid #89c4f4;
+    padding-bottom:2px; 
+}
+a:hover,
+a:active{
+    color: #000000;
+    text-decoration: none;
+    border-bottom:1px solid transparent;
+    -webkit-transition:   border-bottom 0.4s, color 0.4s;
+    transition:   border-bottom 0.4s, color 0.4s;
+
+}
+
+/*------------------------ */
+/*Buttons */
+/*------------------------ */
+.btn:link,
+.btn:visited,
+input[type=submit]{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    -webkit-transition: background-color 0.4s, color 0.4s, border 0.4s;
+    transition: background-color 0.4s, color 0.4s, border 0.4s;
+}
+
+.full:link,
+.full:visited,
+input[type=submit]
+{
+    background-color: #89c4f4;
+    border-radius:200px; 
+  margin-right: 15px;
+     border: 1px solid #89c4f4;
+    color: azure;
+}
+
+.ghost:link,
+.ghost:visited
+
+{
+    color:#89c4f4;
+    border: 1px solid #89c4f4;
+        border-radius:200px; 
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active
+{
+    background-color:#3b9ded;
+}
+
+.full:hover,
+.full:active,
+input[type=submit]
+{
+  border: 1px solid #3b9ded;  
+}
+
+.ghost:hover,
+.ghost:active
+
+{
+    color:#fff;
+    border: 1px solid #3b9ded;
+     }
+
+
+.logo
+{
+    float: left;
+    height:100px;
+    width: auto;
+    margin-top:20px; 
+   
+    
+    
+}
+
+.main-nav{
+  float: right;
+    list-style: none;
+    margin-top:55px; 
+
+    }
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+    
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: azure;
+    padding: 8px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:80%;
+    border-bottom:2px solid transparent;
+    -webkit-transition: border-bottom 0.4s;
+    transition: border-bottom 0.4s;
+    
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+border-bottom:2px solid #3b9ded;
+    
+}
+
+/*------------------------ */
+/*meal */
+/*------------------------ */
+
+.section2{
+    padding:0;
+}
+.meal
+{
+    list-style: none;
+    width: 100%;
+    
+}
+.meal li
+{
+    display: block;
+    float: left;
+    width: 25%;
+    
+}
+
+.meal-pic{
+    width:100%;
+    margin: 0;
+    overflow: hidden;
+    
+    background-color:#000; 
+}
+
+.meal-pic img{
+    width: 100%;
+    opacity:0.7;
+    height: auto;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition:opacity 0.5s,-webkit-transform 0.5s;
+    transition:opacity 0.5s,-webkit-transform 0.5s;
+    transition:transform 0.5s,opacity 0.5s;
+    transition:transform 0.5s,opacity 0.5s,-webkit-transform 0.5s; 
+}
+.meal-pic img:hover{
+    opacity: 1;
+    
+    -webkit-transform: scale(1.03);
+    
+    transform: scale(1.03)
+}
+
+/*------------------------ */
+/*steps */
+/*------------------------ */
+
+.step-box:first-child{
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.step-box:last-child
+{
+    padding-left:3%;
+    margin-top: 30px;
+}
+.apple{
+    width:40%; 
+}
+
+.steps{
+    margin-bottom:50px;
+    }
+.steps div
+{
+    color:#3b9ded;
+    border:2px solid; 
+    display:inline-block;
+    border-radius:50%;
+    height:50px;
+    width:50px;
+    text-align: center;
+    padding:5px;
+    float:left;
+    font-size:150%;
+    margin-right:25px; 
+}
+.store:link,
+.store:visited{
+    border:0; 
+}
+.store img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.section3{
+    padding-top:30px; 
+   background-color: #eaeaea;
+}
+
+.step:last-of-type{
+    margin-top:80px; 
+}
+
+.clearfix {zoom: 1}
+.clearfix:after{
+    content:'.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+} 
+
+/*------------------------ */
+/*cities */
+/*------------------------ */
+
+.city img{
+   width:100%; 
+    height: auto;
+    margin-bottom: 15px;
+    }
+
+.features{
+    margin-bottom: 5px;
+}
+
+/*------------------------ */
+/*customer */
+/*------------------------ */
+
+.section4{
+    margin-top:50px; 
+    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.77)),to(rgba(0, 0, 0, 0.73))),url(https://assets3.thrillist.com/v1/image/2753246/size/gn-gift_guide_variable_c.jpg); 
+    background-image:linear-gradient(rgba(0, 0, 0, 0.77),rgba(0, 0, 0, 0.73)),url(https://assets3.thrillist.com/v1/image/2753246/size/gn-gift_guide_variable_c.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: azure;
+    
+}
+
+blockquote{
+    padding:2%;
+    font-style:italic;
+    line-height:40px; 
+    position: relative;
+    margin-top:50px; 
+    
+}
+
+blockquote:before{
+    content: "\201C";
+    font-size:500%;
+    display: block;
+    position: absolute;
+    top:-5px;
+    left:-5px; 
+
+}
+
+cite{
+    display: block;
+    font: italic;
+    margin-top:25px;
+    font-size:120%;
+
+}
+
+cite img
+{
+    border-radius:100px; 
+    height:45px;
+    margin-top:10px;
+    margin-right:10px; 
+     vertical-align:middle; 
+}
+
+/*------------------------ */
+/*sign up */
+/*------------------------ */
+
+.signup{
+    background-color:#eaeaea;
+    
+    }
+.plans{
+    width:90%;
+    border-radius:5px;
+    margin-right:200px;
+    background-color: #ffffff;
+    -webkit-box-shadow:0 3px 2px grey;
+    box-shadow:0 3px 2px grey; 
+    }
+.plans div{
+    margin-left:5px; 
+    padding:15px; 
+    border-bottom:1px solid #e8e0e0;
+    
+    }
+.plans div:first-child{
+    color:#a5a5a5;
+}
+.plans div:last-child{
+    color: #a5a5a5;
+  text-align: center;
+}
+.plans div ul li
+{
+    list-style: none;
+    
+    
+}
+.amount{
+    color: #3b9ded;
+  font-size:300%;   
+    
+    
+}
+
+.amount span {
+font-size:30%; 
+}
+
+.permeal
+{
+    font-size:100%; 
+    
+}
+
+
+/*------------------------ */
+/*form*/
+/*------------------------ */
+
+.contact{
+    width:60%;
+    margin:0 auto; 
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea{
+    
+    padding:7px;
+    width: 100%;
+    border-radius:3px ;
+    border:2px solid #e0e0e0;
+    
+    
+}
+
+textarea{
+    height: 100%;
+}
+
+input[type=checkbox]{
+    margin:10px 10px 10px 0;
+
+}
+
+*:focus {outline-color:#adb1ad}
+
+
+/*------------------------ */
+/*footer*/
+/*------------------------ */
+
+footer{
+    background-color:#585555;
+    
+}
+
+.footernav{
+    
+    color: #f8ebeb;
+    float: left;
+    list-style: none;
+     
+    
+}
+
+.links {
+    
+    float: right;
+    list-style: none;
+     
+}
+
+
+.footernav li,
+.links li{
+    display: inline-block;
+    margin-right: 20px;
+ 
+    
+}
+
+.footernav li a:link,
+.footernav li a:visited,
+.links li a:link,
+.links li a:visited
+{
+    color: darkgray;
+    -webkit-transition: color 0.4s;
+    transition: color 0.4s;
+    text-decoration: none;
+    border:0; 
+
+}
+
+.footernav li a:hover,
+.footernav li a:active{
+    
+        color: floralwhite;
+}
+
+.footernav li:last-child,
+.links li:last-child{
+    margin:0;
+}
+
+.ion-social-instagram:hover{
+    
+    color:#517fa4 ;
+}
+.ion-social-facebook:hover{
+    
+    color:#3b5998 ;
+}
+.ion-social-googleplus:hover{
+    
+    color:#dc4e41 ;
+}
+.ion-social-twitter:hover{
+    
+    color:#55acee ;
+}
+
+footer p{
+    
+    text-align:center;
+    font-size:100%;
+    color: azure;
+    margin-top:40px;
+    margin-bottom:20px; 
+    
+}
